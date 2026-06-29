@@ -1,0 +1,112 @@
+# Base inicial para projeto de Teoria dos Grafos - Campus Darcy Ribeiro / UnB
+# Fontes oficiais usadas para nomes e localização geral:
+# - Mapas da Universidade de Brasília, Campus Darcy Ribeiro, Boas-Vindas UnB, 2024/2025.
+# - Página oficial da UnB sobre o Campus Darcy Ribeiro.
+# - Página do CEPLAN sobre o Campus Universitário Darcy Ribeiro.
+#
+# ATENÇÃO: os nomes dos pontos vêm de fontes oficiais. Os pesos em metros são estimativas
+# didáticas, feitas para uso em algoritmos de grafos como BFS, DFS e Dijkstra. Para uso real,
+# substitua os pesos por medições precisas de GPS/OpenStreetMap.
+#
+# FORMATO DOS VÉRTICES:
+# V;id;sigla;nome;tipo
+#
+# FORMATO DAS ARESTAS:
+# E;origem;destino;peso_m;tipo
+# Todas as arestas abaixo devem ser tratadas como bidirecionais.
+
+# =====================
+# VÉRTICES PRINCIPAIS
+# =====================
+V;0;HUB;Hospital Universitário de Brasília;hospital
+V;1;HVET;Hospital Veterinário;hospital
+V;2;PRC;Prefeitura da Universidade de Brasília;administrativo
+V;3;FT;Faculdade de Tecnologia;academico
+V;4;FD;Faculdade de Direito;academico
+V;5;FACE;Faculdade de Economia, Administração, Contabilidade e Gestão de Políticas Públicas;academico
+V;6;FS;Faculdade de Ciências da Saúde;academico
+V;7;FM;Faculdade de Medicina;academico
+V;8;IQ;Instituto de Química;academico
+V;9;IB;Instituto de Ciências Biológicas;academico
+V;10;FE;Faculdade de Educação;academico
+V;11;BSAS;Bloco de Salas de Aula Sul;salas_aula
+V;12;BSAN;Bloco de Salas de Aula Norte;salas_aula
+V;13;ICC_NORTE;Instituto Central de Ciências - Ala Norte;academico
+V;14;ICC_CENTRO;Instituto Central de Ciências - Ala Centro;academico
+V;15;ICC_SUL;Instituto Central de Ciências - Ala Sul;academico
+V;16;RU;Restaurante Universitário;servico
+V;17;BCE;Biblioteca Central;servico
+V;18;REITORIA;Reitoria;administrativo
+V;19;CCAB;Centro Comunitário Athos Bulcão;convivencia
+V;20;BEIJODROMO;Memorial Darcy Ribeiro - Beijódromo;cultural
+V;21;IDA_UED;Instituto de Artes / UED;academico
+V;22;CO;Centro Olímpico;esporte
+V;23;FEF;Faculdade de Educação Física;academico
+V;24;CIC_EST;Prédio de Ciência da Computação e Estatística;academico
+V;25;IPOL_IREL;IPOL / IREL;academico
+V;26;CDT_DPI_DPG;CDT / DPI / DPG;administrativo_pesquisa
+V;27;UNBTV;UnBTV;comunicacao
+V;28;PMU_I;Pavilhão Multiuso I;salas_aula
+V;29;PMU_II;Pavilhão Multiuso II;salas_aula
+V;30;COLINA;Colina - blocos residenciais;moradia
+V;31;CEU;Casa do Estudante Universitário;moradia
+V;32;MALOCA;Centro de Vivência Multicultural dos Povos Indígenas;convivencia
+V;33;PONTO_L3_CENTRO;Ponto de ônibus - L3 Norte / Centro do Campus;transporte
+V;34;PONTO_L3_HUB;Ponto de ônibus - L3 Norte / HUB;transporte
+V;35;PONTO_L4_CO;Ponto de ônibus - L4 Norte / Centro Olímpico;transporte
+
+# =====================
+# ARESTAS / CAMINHOS
+# =====================
+E;HUB;PONTO_L3_HUB;120;calçada
+E;PONTO_L3_HUB;PRC;430;calçada
+E;PRC;FT;180;calçada
+E;FT;FD;220;calçada
+E;FD;FACE;260;calçada
+E;FACE;BSAN;180;calçada
+E;BSAN;ICC_NORTE;180;calçada
+E;FT;ICC_NORTE;180;calçada
+E;FD;ICC_NORTE;250;calçada
+E;FACE;IPOL_IREL;260;calçada
+E;IPOL_IREL;BCE;250;calçada
+E;FACE;CCAB;500;calçada
+E;BCE;CCAB;420;calçada
+E;CCAB;PONTO_L4_CO;650;via_interna
+E;PONTO_L4_CO;CO;550;calçada
+E;CO;FEF;350;calçada
+E;ICC_NORTE;ICC_CENTRO;450;corredor_icc
+E;ICC_CENTRO;ICC_SUL;450;corredor_icc
+E;ICC_CENTRO;RU;120;calçada
+E;ICC_CENTRO;FE;280;calçada
+E;FE;RU;320;calçada
+E;ICC_SUL;BCE;160;calçada
+E;BCE;REITORIA;230;calçada
+E;REITORIA;BEIJODROMO;250;calçada
+E;BEIJODROMO;IDA_UED;200;calçada
+E;IDA_UED;IQ;300;calçada
+E;IQ;FM;180;calçada
+E;FM;FS;150;calçada
+E;FS;BSAS;200;calçada
+E;BSAS;ICC_SUL;250;calçada
+E;IB;IQ;280;calçada
+E;IB;ICC_SUL;320;calçada
+E;FT;FE;350;calçada
+E;FE;UNBTV;380;calçada
+E;UNBTV;CDT_DPI_DPG;450;via_interna
+E;CDT_DPI_DPG;PONTO_L3_CENTRO;300;via_interna
+E;PONTO_L3_CENTRO;PRC;500;via_interna
+E;PONTO_L3_CENTRO;HUB;700;via_interna
+E;HUB;HVET;1300;via_interna
+E;HVET;COLINA;650;via_interna
+E;COLINA;FT;700;via_interna
+E;COLINA;CEU;900;via_interna
+E;CEU;CO;750;via_interna
+E;MALOCA;FACE;320;calçada
+E;MALOCA;BSAN;300;calçada
+E;PMU_I;BCE;250;calçada
+E;PMU_II;BCE;300;calçada
+E;PMU_I;PMU_II;180;calçada
+E;PMU_I;REITORIA;350;calçada
+E;CIC_EST;FACE;180;calçada
+E;CIC_EST;BSAN;250;calçada
+E;CIC_EST;ICC_NORTE;300;calçada

@@ -1,0 +1,37 @@
+id,sigla,nome,tipo
+0,HUB,Hospital Universitário de Brasília,hospital
+1,HVET,Hospital Veterinário,hospital
+2,PRC,Prefeitura da Universidade de Brasília,administrativo
+3,FT,Faculdade de Tecnologia,academico
+4,FD,Faculdade de Direito,academico
+5,FACE,"Faculdade de Economia, Administração, Contabilidade e Gestão de Políticas Públicas",academico
+6,FS,Faculdade de Ciências da Saúde,academico
+7,FM,Faculdade de Medicina,academico
+8,IQ,Instituto de Química,academico
+9,IB,Instituto de Ciências Biológicas,academico
+10,FE,Faculdade de Educação,academico
+11,BSAS,Bloco de Salas de Aula Sul,salas_aula
+12,BSAN,Bloco de Salas de Aula Norte,salas_aula
+13,ICC_NORTE,Instituto Central de Ciências - Ala Norte,academico
+14,ICC_CENTRO,Instituto Central de Ciências - Ala Centro,academico
+15,ICC_SUL,Instituto Central de Ciências - Ala Sul,academico
+16,RU,Restaurante Universitário,servico
+17,BCE,Biblioteca Central,servico
+18,REITORIA,Reitoria,administrativo
+19,CCAB,Centro Comunitário Athos Bulcão,convivencia
+20,BEIJODROMO,Memorial Darcy Ribeiro - Beijódromo,cultural
+21,IDA_UED,Instituto de Artes / UED,academico
+22,CO,Centro Olímpico,esporte
+23,FEF,Faculdade de Educação Física,academico
+24,CIC_EST,Prédio de Ciência da Computação e Estatística,academico
+25,IPOL_IREL,IPOL / IREL,academico
+26,CDT_DPI_DPG,CDT / DPI / DPG,administrativo_pesquisa
+27,UNBTV,UnBTV,comunicacao
+28,PMU_I,Pavilhão Multiuso I,salas_aula
+29,PMU_II,Pavilhão Multiuso II,salas_aula
+30,COLINA,Colina - blocos residenciais,moradia
+31,CEU,Casa do Estudante Universitário,moradia
+32,MALOCA,Centro de Vivência Multicultural dos Povos Indígenas,convivencia
+33,PONTO_L3_CENTRO,Ponto de ônibus - L3 Norte / Centro do Campus,transporte
+34,PONTO_L3_HUB,Ponto de ônibus - L3 Norte / HUB,transporte
+35,PONTO_L4_CO,Ponto de ônibus - L4 Norte / Centro Olímpico,transporte

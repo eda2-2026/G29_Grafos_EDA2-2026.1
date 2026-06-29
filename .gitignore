@@ -1,0 +1,5 @@
+campus
+campus.exe
+*.o
+*.exe
+.vscode/
