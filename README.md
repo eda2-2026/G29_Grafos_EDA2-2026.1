@@ -12,7 +12,7 @@ Os locais do campus sao vertices, os caminhos entre locais sao arestas e o peso 
 
 ## Vídeo de Apresentação
 
-[[Link da Apresentação]()](https://youtu.be/eTUFxdjU850)
+[[Link da Apresentação](https://youtu.be/eTUFxdjU850)]
 
 
 ## Modelagem
