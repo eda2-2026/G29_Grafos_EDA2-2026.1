@@ -4,6 +4,17 @@ Projeto em C que representa o Campus Darcy Ribeiro da Universidade de Brasilia c
 
 Os locais do campus sao vertices, os caminhos entre locais sao arestas e o peso de cada aresta representa uma distancia aproximada em metros. O programa carrega os dados dos arquivos CSV da pasta `data/` e permite consultar o grafo por meio de um menu interativo.
 
+## Alunos
+
+| Matrícula | Nome |
+| -- | -- |
+| 241025327 | Matheus Eiki Kimura |
+
+## Vídeo de Apresentação
+
+[[Link da Apresentação]()](https://youtu.be/eTUFxdjU850)
+
+
 ## Modelagem
 
 - Vertices: locais do campus, identificados por `id`, `sigla`, `nome` e `tipo`.
